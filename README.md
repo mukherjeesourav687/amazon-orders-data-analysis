@@ -133,6 +133,7 @@ Sales representatives were evaluated based on achieved sales vs assigned sales t
 
 ## Repository Structure
 
+```
 amazon-orders-data-analysis
 │
 ├── charts
@@ -144,6 +145,7 @@ amazon-orders-data-analysis
 │
 ├── Amazon Orders Dataset.xlsx
 └── README.md
+```
 
 ---
 
