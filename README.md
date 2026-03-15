@@ -52,7 +52,7 @@ Before performing analysis, several preprocessing steps were performed:
 
 This analysis shows the **number of orders and average order value by month**.
 
-![Orders Trend](charts/orders-trend.png)
+![Orders Trend](charts/Orders%20Trend%20chart.png)
 
 ---
 
@@ -60,7 +60,7 @@ This analysis shows the **number of orders and average order value by month**.
 
 Orders were grouped by **customer country** to identify the countries generating the most orders.
 
-![Orders by Country](charts/orders-country.png)
+![Orders by Country](charts/Orders%20by%20Country%20chart.png)
 
 ---
 
@@ -68,7 +68,7 @@ Orders were grouped by **customer country** to identify the countries generating
 
 This analysis identifies **peak ordering hours during the day**.
 
-![Orders by Hour](charts/orders-hour.png)
+![Orders by Hour](charts/Orders%20by%20Hour%20chart.png)
 
 ---
 
@@ -76,7 +76,7 @@ This analysis identifies **peak ordering hours during the day**.
 
 Customers were segmented into age groups to understand which segments contribute the most orders.
 
-![Age Group Analysis](charts/age-group-analysis.png)
+![Age Group Analysis](charts/Age%20Group%20Analysis%20chart.png)
 
 ---
 
@@ -84,7 +84,7 @@ Customers were segmented into age groups to understand which segments contribute
 
 Sales representatives were evaluated based on **achieved sales vs target sales**.
 
-![Sales Target Status](charts/sales-target-status.png)
+![Sales Target Status](charts/Sales%20Target%20Status%20chart.png)
 
 ---
 
