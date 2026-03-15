@@ -1,131 +1,142 @@
-Amazon Orders Data Analysis (Excel Project)
-Project Overview
+# Amazon Orders Data Analysis (Excel Project)
 
-This project analyzes an Amazon Orders dataset using Microsoft Excel.
+## Overview
 
-The objective of this project was to clean the dataset, perform exploratory data analysis, and generate meaningful business insights using Pivot Tables, Excel formulas, and visualizations.
+This project performs **data analysis on an Amazon Orders dataset using Microsoft Excel**.
+The goal was to clean the dataset, perform exploratory analysis, and generate business insights using **Excel formulas, pivot tables, and visualizations**.
 
-The analysis focuses on:
+The analysis focuses on order trends, customer demographics, and sales performance.
 
-• Order trends
-• Customer demographics
-• Sales performance
-• Sales target achievement
+---
 
-Tools Used
+## Tools Used
 
-• Microsoft Excel
-• Pivot Tables
-• Excel Formulas (IF, SUMIFS, COUNTIFS, AVERAGEIFS)
-• Data Cleaning Techniques
-• Data Visualization (Charts)
+* Microsoft Excel
+* Pivot Tables
+* Excel Formulas (IF, SUMIFS, COUNTIFS, AVERAGEIFS)
+* Data Cleaning Techniques
+* Data Visualization
 
-Dataset Description
+---
 
-The dataset contains information related to customer orders and sales performance.
+## Dataset
 
-Main columns included in the dataset:
+The dataset contains information about customer orders including:
 
-• Customer ID
-• Customer Country
-• Order Datetime
-• Order Source
-• Sales POC (Sales Representative)
-• Order Value
-• Customer Age
-• Sales Target
+* Customer ID
+* Customer Country
+* Order Date and Time
+* Order Source
+* Sales Representative (Sales POC)
+* Order Value
+* Customer Age
+* Sales Targets
 
-Data Cleaning & Preparation
+---
 
-Before analysis, several preprocessing steps were performed:
+## Data Preparation
 
-• Split Order Datetime into Order Date and Order Time
+Before performing analysis, several preprocessing steps were performed:
 
-• Created Order Month and Order Day columns
+* Split **Order Datetime** into **Order Date** and **Order Time**
+* Created **Month** and **Day** columns
+* Handled missing **Age values** using moving average
+* Detected outliers using the **IQR method**
+* Created **Age Groups** for customer segmentation
 
-• Handled missing Age values using moving average
+---
 
-• Detected outliers using the IQR (Interquartile Range) method
+## Analysis & Visualizations
 
-• Created Age Groups for demographic analysis
+### Orders Trend
 
-Analysis Performed
-1. Orders Trend
+This analysis shows the **number of orders and average order value by month**.
 
-A pivot table was created to analyze the number of orders and average order value by month.
+![Orders Trend](charts/orders-trend.png)
 
-This helps identify seasonal patterns and order trends.
+---
 
-![Orders Trend](charts/Orders Trend chart.png)
+### Orders by Country
 
-2. Orders by Country
+Orders were grouped by **customer country** to identify the countries generating the most orders.
 
-Orders were grouped by customer country to identify which countries generate the highest number of orders and sales.
+![Orders by Country](charts/orders-country.png)
 
-![Orders by Country](charts/Orders by Country chart.png)
+---
 
-3. Orders by Hour
+### Orders by Hour
 
-Order time was analyzed to determine peak ordering hours during the day.
+This analysis identifies **peak ordering hours during the day**.
 
-Orders were grouped by hour using pivot table time grouping.
+![Orders by Hour](charts/orders-hour.png)
 
-![Orders by Hour](charts/Orders by Hour chart.png)
+---
 
-4. Age Group Analysis
+### Age Group Analysis
 
-Customers were segmented into different age groups:
+Customers were segmented into age groups to understand which segments contribute the most orders.
 
-• Below 20
-• 20 – 30
-• 30 – 40
-• 40 – 50
+![Age Group Analysis](charts/age-group-analysis.png)
 
-This helps identify which age group contributes most to orders.
+---
 
-![Age Group Analysis](charts/Age Group Analysis chart.png)
+### Sales Target Analysis
 
-5. Sales Target Analysis
+Sales representatives were evaluated based on **achieved sales vs target sales**.
 
-Sales representatives were evaluated based on their achieved sales vs annual sales targets.
+![Sales Target Status](charts/sales-target-status.png)
 
-Each salesperson was categorized as:
+---
 
-• Target Not Met
-• Target Met
-• Exceeded Target
+## Key Insights
 
-![Sales Target Status](charts/Sales Target Status chart.png)
+* A significant portion of orders occur during **late-night hours**
+* Some countries generate **much higher order volume**
+* Customers aged **30–40 contribute a large portion of orders**
+* Several sales representatives **exceeded their targets**
+* However, more representatives **did not meet their targets**
 
-Key Insights
+---
 
-• Most orders occur during late-night hours.
+## Project Workflow
 
-• Certain countries generate significantly higher order volumes.
+1. Data Cleaning
+2. Feature Engineering
+3. Pivot Table Analysis
+4. Data Visualization
+5. Sales Performance Analysis
 
-• The 30–40 age group contributes a large portion of orders.
+---
 
-• Some sales representatives exceeded their annual targets.
+## Skills Demonstrated
 
-• However, more sales representatives did not meet their targets.
+* Data Cleaning
+* Excel Data Analysis
+* Pivot Tables
+* Conditional Logic
+* Aggregation Functions
+* Data Visualization
 
-Project Workflow
+---
 
-Data Cleaning
+## Repository Structure
 
-Feature Engineering
+```
+amazon-orders-data-analysis
+│
+├── charts
+│   ├── orders-trend.png
+│   ├── orders-country.png
+│   ├── orders-hour.png
+│   ├── age-group-analysis.png
+│   └── sales-target-status.png
+│
+├── Amazon Orders Dataset.xlsx
+└── README.md
+```
 
-Pivot Table Analysis
+---
 
-Data Visualization
+## Conclusion
 
-Sales Performance Evaluation
-
-Skills Demonstrated
-
-• Data Cleaning in Excel
-• Pivot Table Analysis
-• Conditional Logic (IF Statements)
-• Aggregation with SUMIFS, COUNTIFS, AVERAGEIFS
-• Outlier Detection using IQR
-• Data Visualization using Excel Charts
+This project demonstrates how Excel can be used for **end-to-end data analysis**, including data cleaning, pivot analysis, and visualization to generate business insights.
